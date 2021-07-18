@@ -1,2 +1,2 @@
 # eportfolio
-My personal eportfolio made from HTML5, Bootstrap, and Javascript
+My personal eportfolio made with HTML5, Bootstrap, and Javascript
