@@ -1,8 +1,23 @@
 #projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
-  margin-top: -10rem;
-  padding-top: 15rem;
+  background-color: $primary-color;
+  // border-radius: 0 0 0 10%;
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 5%,
+    $secondary-color 100%
+  );
+  color: $white-color;
+  height: 100%;
+  border-top: 0px;
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  padding-top: 10%;
+
+  @include respond(tab-land) {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -17,7 +32,11 @@
     }
 
     .row {
-      margin-bottom: 8rem;
+      background-color:$white-color;
+      color: $black;
+      margin-bottom: 3rem;
+      padding: 3rem;
+      border-radius: 3rem;
 
       @include respond(phone) {
         margin-bottom: 4rem;
@@ -35,6 +54,7 @@
       }
 
       &-title {
+        color: $primary-color;
         font-weight: bold;
         margin-bottom: 1.8rem;
         font-size: $mid-font-size;

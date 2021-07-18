@@ -1,13 +1,7 @@
 <!--
-  Hello!
   -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
+  I used a template made by Jacobo Martinez which was a great work. Go check him out https://github.com/cobidev/simplefolio/
   -
-  Github Repo: https://github.com/cobidev/simplefolio/
-  Readme: https://github.com/cobidev/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -18,11 +12,11 @@
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
     <!-- Put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>ECH-CHEBLAOUY Yassine</title>
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta name="description" content="ECH-CHEBLAOUY Yassine | Developer" />
 
     <!-- Required librarys -->
     <link
@@ -34,21 +28,45 @@
       ScrollReveal({ reset: false });
     </script>
 
+
+    <!-- Logos script -->
+    <script src="https://kit.fontawesome.com/77ef6979e8.js" crossorigin="anonymous"></script>
     <!-- Remove this script once you setup your custom portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <!-- Follow the HTML instructions to create your stunning portfolio website -->
   <body>
+    <!-- Modal (PopUp) -->
+    <div class="modal">
+
+      <!-- The Close Button -->
+      <span class="close unselectable">
+        <i class="far fa-times-circle"></i>
+      </span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content">
+      
+      </img>
+    </div>
+
     <div id="top"></div>
+
+    
 
     <!-- **** Hero Section **** -->
     <div id="hero" class="jumbotron">
       <div class="container">
+        <!-- Logo -->
+        <div class="project-wrapper__image unselectable">
+              <img data-tilt class="hero-logo" src="./assets/logo.png" />
+          </a>
+        </div>
+        <!-- Name and title -->
         <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <br> <span class="text-color-main">ECH-CHEBLAOUY Yassine</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a software engineering student.
         </h1>
         <p class="hero-cta" class="load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
@@ -76,14 +94,16 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you can!
+                Just a creative soul wanting to make a positive change in the modern world.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                IT passionate since an early age, and always searching for more opportunities to exploit my passion.
+              </p>
+              <p class="about-wrapper__info-text">
+                Extra-curricular activities enthusiast, especially event organisation activities.
               </p>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="">
+                <a target="_blank" class="cta-btn cta-btn--white resume" href="">
                   View Resume
                 </a>
               </span>
@@ -94,107 +114,120 @@
     </section>
     <!-- /END About Section -->
 
-    <!-- **** Projects Section **** -->
-    <section id="projects">
+    <!-- **** Experience Section **** -->
+    <section id="experience">
       <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+        <div class="experience-wrapper">
+          <h2 class="section-title dark-blue-text">Professional Experience</h2>
 
-          <!-- Each .row is a project -->
+          <!-- Each .row is an experience -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+              <div class="experience-wrapper__text">
+                <h3 class="experience-wrapper__text-title">Internship: Topographic Data Visualisation</h3>
+                <div class="experience-wrapper__text-info">
+                  <i class="fas fa-building"></i>
+                  <span class="font-italic">
+                    Exploroc
+                  </span>
+                  <br>
+                  <i class="far fa-calendar-alt"></i>
+                  <span class="font-italic">
+                    June 2020 - August 2020
+                  </span>
+                  <br>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="font-italic">
+                    Caen - France (Remotely)
+                  </span>
+                </div>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    Developpement of a cad like application that visualizes topographic data in 2D and 3D.
+                    It also processes the data with some user input to calculate important topographic points for mining.
+                  </p>
+                  <p class="mb-4">
+                    The application had an article talking about it on the "mines & carrières" magazine on the 281-282 edition.
+                    <a class="link--article cta-btn text-color-main" target="_blank" style="padding: 0rem">Check it out.</a>
+                  </p>
+
+                  <p class="mb-4">
+                    Presentation of the application on the SIM (Société de l'Industrie Minérale) congress (See on the first paragraph of the article).
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a>
+
+                <!-- Tags -->
+                <div class="unselectable">
+                  <div class="cta-tag cta-btn" href="#!">Python</div>
+                  <div class="cta-tag cta-btn" href="#!">PyQT</div>
+                  <div class="cta-tag cta-btn" href="#!">Data Visualisation</div>
+                  <div class="cta-tag cta-btn" href="#!">OpenGL</div>
+                  <div class="cta-tag cta-btn" href="#!">Pandas</div>
+                </div>
+
               </div>
+
+
             </div>
             <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
+              <div class="experience-wrapper__image">
                 <a href="#!" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/qub3d.png" />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
+          <!-- /END Experience -->
 
-          <!-- Each .row is a project -->
+          <!-- Each .row is an experience -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+              <div class="experience-wrapper__text">
+                <h3 class="experience-wrapper__text-title">Internship: Data Processing Ergonomic App</h3>
+                <!-- Info -->
+                <div class="experience-wrapper__text-info">
+                  <i class="fas fa-building"></i>
+                  <span class="font-italic">
+                    Attijariwafa bank
+                  </span>
+                  <br>
+                  <i class="far fa-calendar-alt"></i>
+                  <span class="font-italic">
+                    July 2019
+                  </span>
+                  <br>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="font-italic">
+                    Casablanca - Morocco
+                  </span>
+                </div>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    Development of an application that calculates RIB codes from a big sized batch of account numbers.
+                  </p>
+                  <p class="mb-4">
+                    Ergonomic and easy to use to accelerate the process for the HR people since it is repetitive.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a>
+
+                <!-- Tags -->
+                <div class="unselectable">
+                  <div class="cta-tag cta-btn" href="#!">HTML</div>
+                  <div class="cta-tag cta-btn" href="#!">CSS</div>
+                  <div class="cta-tag cta-btn" href="#!">JavaScript</div>
+                  <div class="cta-tag cta-btn" href="#!">NodeJs</div>
+                  <div class="cta-tag cta-btn" href="#!">Electron</div>
+                  <div class="cta-tag cta-btn" href="#!">Bootstrap</div>
+                </div>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
+              <div class="experience-wrapper__image">
                 <a href="#!" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/ribapp.png" />
                   </div>
                 </a>
               </div>
@@ -204,20 +237,477 @@
         </div>
       </div>
     </section>
+    <!-- /END experiences Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Currency value recognition (Euro)</h3>
+                <div>
+                  <p class="mb-4">
+                    Develoment of an application that recognize the value of currency (euro)
+                    notes and coins from 1 cent to 100 euros using a convolutional network implemented
+                    by keras tensorfow.
+                  </p>
+                </div>
+                <a class="cta-btn cta-btn--hero" target="_blank" href="https://github.com/Testoxe/EuroMoneyRecognition">Github</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="project-wrapper__image">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid modal-trigger" src="./assets/eurorecog1.png"/>
+                  </div>
+              </div>
+
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <!-- Image -->
+              <div class="project-wrapper__image unselectable">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid modal-trigger" src="./assets/eurorecog2.png" />
+                  </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">BigData computing architecture</h3>
+                <div>
+                  <p class="mb-4">
+                    Development of a "Hadoop" like architecture following the map-reduce conception.
+                  </p>
+                  <p class="mb-4">
+                    Segments, distributes then processes big chunks of data on remote machines
+                    (servers) where each of is enhanced with multi-threading technology.
+                  </p>
+                </div>
+                <a class="cta-btn cta-btn--hero" target="_blank" href="https://github.com/Testoxe/SimplifiedHadoop">Github</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="project-wrapper__image">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid modal-trigger" src="./assets/hidoop1.jpg"/>
+                  </div>
+              </div>
+
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <!-- Image -->
+              <div class="project-wrapper__image unselectable">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid modal-trigger" src="./assets/hidoop2.png" />
+                  </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">C-Pascal compiler</h3>
+                <div>
+                  <p class="mb-4">
+                    Conception and development from scratch of an execution environment
+                    (compiler + interpreter) of a custom language deriving from C and Pascal.
+                    (See Github for more details)
+                  </p>
+                </div>
+                <a class="cta-btn cta-btn--hero" target="_blank" href="https://github.com/Testoxe/C-Pascal-Compiler">Github</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="project-wrapper__image">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid modal-trigger" src="./assets/compil1.png"/>
+                  </div>
+              </div>
+
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <!-- Image -->
+              <div class="project-wrapper__image unselectable">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid modal-trigger" src="./assets/compil2.png" />
+                  </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Nine men's morris game</h3>
+                <div>
+                  <p class="mb-4">
+                    Strategy C++ game with a graphical interface (framework Cocos-2d).
+                  </p>
+                  <p class="mb-4">
+                    <b>Artificial Intelligence:</b> Decision making algorithms
+                    <a class="link--article cta-btn text-color-main" target="_blank" href="https://en.wikipedia.org/wiki/Minimax" style="padding: 0rem">MiniMax</a>
+                    &
+                    <a class="link--article cta-btn text-color-main" target="_blank" href="https://en.wikipedia.org/wiki/Alpha-beta_pruning" style="padding: 0rem">Alpha-beta pruning.</a>
+                  </p>
+                </div>
+                <a class="cta-btn cta-btn--hero" target="_blank" href="https://github.com/Testoxe/Jeu-du-moulin">Github</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="project-wrapper__image">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid modal-trigger" src="./assets/ninemen1.png"/>
+                  </div>
+              </div>
+
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <!-- Image -->
+              <div class="project-wrapper__image unselectable">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid modal-trigger" src="./assets/ninemen2.png" />
+                  </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Go Game</h3>
+                <div>
+                  <p class="mb-4">
+                    Strategy console game made as a end of course project and to practice C language.
+                  </p>
+                  <p class="mb-4">
+                    <b>Artificial Intelligence:</b> Implemented a decision tree like IA that reacts to specific situations
+                    and uses strategies taken from books and game documentation to counter if none of the situation
+                    is recognized in the game, then it tries to capture the token by surroundid player tokens.
+                  </p>
+                </div>
+                <a class="cta-btn cta-btn--hero" target="_blank" href="https://github.com/Testoxe/GoGame">Github</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="project-wrapper__image">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid modal-trigger" src="./assets/gogame1.png"/>
+                  </div>
+              </div>
+
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <!-- Image -->
+              <div class="project-wrapper__image unselectable">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid modal-trigger" src="./assets/gogame2.png" />
+                  </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- /END Project -->
+
+        </div>
+      </div>
+    </section>
     <!-- /END Projects Section -->
 
-    <!-- **** Contact Section **** -->
-    <section id="contact">
+    <!-- **** Education Section **** -->
+    <section id="education">
+      <div id="education-background">
+        <div class="container">
+          <div class="education-wrapper">
+            <h2 class="section-title dark-blue-text">Education</h2>
+
+            <!-- Each .row is an education -->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="education-wrapper__text">
+                  <h3 class="education-wrapper__text-title">INP-Toulouse: ENSEEIHT</h3>
+                  <div class="education-wrapper__text-info">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="font-italic">
+                      Software Engineering
+                    </span>
+                    <br>
+                    <i class="far fa-calendar-alt"></i>
+                    <span class="font-italic">
+                      2020 - Now
+                    </span>
+                    <br>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="font-italic">
+                      Toulouse - France
+                    </span>
+                  </div>
+                  <div>
+                    <p class="mb-4">
+                      A new experience in a new world.
+                      I got admitted in an exchange for a double degree in ENSEEIHT, where I could study the main following topics:
+                    </p>
+                  </div>
+
+                  <!-- Tags -->
+                  <div class="unselectable">
+                    <div class="cta-tag cta-btn" href="#!">Optimisation and operations research</div>
+                    <div class="cta-tag cta-btn" href="#!">Concurrent Systems and Multi-Threaded Programming</div>
+                    <div class="cta-tag cta-btn" href="#!">Functional Programming</div>
+                    <div class="cta-tag cta-btn" href="#!">Graph Theory</div>
+                    <div class="cta-tag cta-btn" href="#!">Deep Learning applied to image processing</div>
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="education-wrapper__image">
+                  <a href="#!" target="_blank">
+                    <div data-tilt class="thumbnail rounded">
+                      <img class="img-fluid" src="./assets/enseeiht.jpg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END education -->
+
+            <!-- Each .row is an education -->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="education-wrapper__text">
+                  <h3 class="education-wrapper__text-title">Hassania School of Public Works</h3>
+                  <!-- Info -->
+                  <div class="education-wrapper__text-info">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="font-italic">
+                      IT Engineering
+                    </span>
+                    <br>
+                    <i class="far fa-calendar-alt"></i>
+                    <span class="font-italic">
+                      2018 - 2020
+                    </span>
+                    <br>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="font-italic">
+                      Casablanca - Morocco
+                    </span>
+                  </div>
+                  <div>
+                    <p class="mb-4">
+                      The engineering adventure starts here.
+                      Right after finishing the preparatory classes, I got admitted in EHTP where I could get a formation in the themes below:
+                    </p>
+                  </div>
+
+                  <!-- Tags -->
+                  <div class="unselectable">
+                    <div class="cta-tag cta-btn" href="#!">Basic Programming Languages</div>
+                    <div class="cta-tag cta-btn" href="#!">Advanced Algorithmics</div>
+                    <div class="cta-tag cta-btn" href="#!">IT Projects Conception</div>
+                    <div class="cta-tag cta-btn" href="#!">Web Developpement</div>
+                    <div class="cta-tag cta-btn" href="#!">Android Developpement</div>
+                    <div class="cta-tag cta-btn" href="#!">Network Architecture</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="education-wrapper__image">
+                  <a href="#!" target="_blank">
+                    <div data-tilt class="thumbnail rounded">
+                      <img class="img-fluid" src="./assets/ehtp.png" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END education -->
+
+            <!-- Each .row is an education -->
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="education-wrapper__text">
+                  <h3 class="education-wrapper__text-title">MV Preparatory Classes</h3>
+                  <!-- Info -->
+                  <div class="education-wrapper__text-info">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="font-italic">
+                      Maths, Physics, and engineering science
+                    </span>
+                    <br>
+                    <i class="far fa-calendar-alt"></i>
+                    <span class="font-italic">
+                      2016 - 2018
+                    </span>
+                    <br>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="font-italic">
+                      Casablanca - Morocco
+                    </span>
+                  </div>
+                  <div>
+                    <p class="mb-4">
+                      A lot of theory, a bit of practice, and definitely a lot of discipline.
+                      Two years of preparation and acquisition of all the theoritical skills required for engineering:
+                    </p>
+                  </div>
+
+                  <!-- Tags -->
+                  <div class="unselectable">
+                    <div class="cta-tag cta-btn" href="#!">Maths</div>
+                    <div class="cta-tag cta-btn" href="#!">Physics</div>
+                    <div class="cta-tag cta-btn" href="#!">Algorithmics</div>
+                    <div class="cta-tag cta-btn" href="#!">Programming (Python)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-sm-12">
+                <div class="education-wrapper__image">
+                  <a href="#!" target="_blank">
+                    <div data-tilt class="thumbnail rounded">
+                      <img class="img-fluid" src="./assets/m5.jpg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /END education -->
+          </div>
+        </div>
+      </section>
+      <!-- /END education Section -->
+
+      <!-- **** extracurricular Section **** -->
+    <section id="extracurricular">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
+        <div class="extracurricular-wrapper">
+          <h2 class="section-title dark-blue-text">Extra-curricular activities</h2>
+
+          <!-- Each .row is an extracurricular -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="extracurricular-wrapper__text">
+                <h3 class="extracurricular-wrapper__text-title">Olympiades EHTP</h3>
+                <div class="extracurricular-wrapper__text-info">
+                  <span class="font-italic">
+                    14th edition
+                  </span>
+                  <br>
+                </div>
+                <div>
+                  <p class="mb-4">
+                    <b>Olympiades EHTP</b> is a club that organizes the biggest university event in Morocco. The event counts <b>10 000 visitors</b> and <b>2500 participants</b>.
+                    It's about sports, culture, and arts.
+                    There is all form of competitions, show and even a big concert at the end. There is a modern sports themed conference with which the event starts.
+                    I started as an active member of the club on my first year, and then became a logistics team leader.
+                    My team and I, was charged with all the logistics and problem solving tasks.
+                    The experience has taught me:
+                  </p>
+                  <p class="mb-4">
+                    <b>Professional Engagement</b> (as we had to contact sponsors for financial aid and other companies for service provisions)
+                  </p>
+                  <p class="mb-4">
+                    <b>Leadership</b> (team leading tasks of a 9 persons team)
+                  </p>
+                  <p class="mb-4">
+                    <b>Innovation</b> (we had to find solutions to new problems with creative ways)
+                  </p>
+                  <p class="mb-4">
+                    <b>Budget management</b> (we had to divide our budget into the activities and shows depending on their importance)
+                  </p>
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="extracurricular-wrapper__image">
+                <a href="#!" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/olympiades.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END extracurricular -->
+
+          <!-- Each .row is an extracurricular -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="extracurricular-wrapper__text">
+                <h3 class="extracurricular-wrapper__text-title">Rotaract EHTP</h3>
+                <!-- Info -->
+                <div class="extracurricular-wrapper__text-info">
+                  <span class="font-italic">
+                    Holi Festival
+                  </span>
+                  <br>
+                </div>
+                <div>
+                  <p class="mb-4">
+                    On my first year at EHTP, I participated in the organisation of a Holi Festival which the incomes went to charity (foster care).
+                    And since the goal was the make money for people in need, we had to save as much as we could.
+                    So we contacted artists and convinced them to perform for free.
+                    We bought just the ingredients and made the colored powder ourselves.
+                    And we had to advertise the event to sell as much ticket as possible.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="extracurricular-wrapper__image">
+                <a href="#!" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/rotaract.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END extracurriculars Section -->
+
+      <!-- **** Contact Section **** -->
+      <section id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <div class="contact-wrapper">
+            <p class="contact-wrapper__text">For any questions or business inquiries</p>
+            <a
+              target="_blank"
+              class="cta-btn cta-btn--white"
+              href="mailto:yassine.eche@gmail.com"
+              >Contact me</a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -230,7 +720,7 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a href="#!" target="_blank">
+          <!-- <a href="#!" target="_blank">
             <i class="fa fa-twitter fa-inverse"></i>
           </a>
           <a href="#!" target="_blank">
@@ -238,42 +728,11 @@
           </a>
           <a href="#!" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
+          </a> -->
+          <a href="https://github.com/Testoxe" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
-
-        <hr />
-
-        <!-- If you give me some credit, will be huge for me :) -->
-        <p class="footer__text">
-          © 2020 - Template developed by
-          <a href="https://github.com/cobidev" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- Remove this paragraph once you setup your custom portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobidev/simplefolio on GitHub"
-            >Star</a
-          >
         </p>
       </div>
     </footer>
